@@ -1,0 +1,135 @@
+.main-head {
+    width: 95%;
+    margin: 0 0 0 auto;
+} 
+
+nav {
+    @include flex(space-between, center, row);
+    min-height: 10vh;
+    width: 60%;
+    flex-wrap: wrap;
+
+    .logo {
+        @include flex(flex-start, center, row);
+        flex: 1 1 10rem;
+
+        h1 {
+            margin: 2rem;
+            font-size: 3.5rem;
+            font-weight: bolder;
+            background: $gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }    
+    } 
+
+    ul {
+        @include flex(space-around, center, row);
+        flex: 1 1 40rem;
+    }
+}  
+
+.intro {
+    min-height: 90vh;
+    width: 90%;
+    margin: auto;
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+
+    h2 {
+        font-size: 8rem;
+        padding-top: 2rem;
+        background: $gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }  
+
+    h3 {
+        font-size: 6rem;
+        padding: 2rem 0rem;
+        font-weight: 500;
+    }
+
+    p {
+        padding-top: 2rem;
+        color: $gray-text
+    }
+} 
+
+.splash {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%;
+    z-index: -1;
+} 
+
+.intro-social {
+    margin-top: 4rem;
+
+    a {
+        margin-right: 5rem;
+        display: inline-block;
+    }
+}
+
+.active {
+    background: $background-main;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+} 
+
+.intro-text, .intro-images {
+    flex: 1 1 40rem;
+} 
+
+#plant-left {
+    animation: plant 1.5s ease-in-out infinite alternate;
+}
+
+#plant-right {
+    animation: plant 1.5s ease-in-out infinite alternate 0.5s;
+}
+
+#me {
+    animation: me 1.5s ease-in-out infinite alternate;
+    transform-origin: bottom;
+} 
+
+#clock-arrow {  
+    animation: clock 2s infinite linear;
+    transform-box: fill-box;
+    transform-origin: bottom;
+    /* transform: translateY(10%); */
+} 
+
+
+@keyframes me {
+    from {
+        transform: rotateZ(-2deg)
+    }
+    to {
+        transform: rotateZ(2deg)
+    }
+}
+
+@keyframes plant {
+    from {
+        transform: translateY(0%)
+    }
+    to {
+        transform: translateY(-25%)
+    }
+} 
+
+@keyframes clock {
+    from {
+        transform: rotateZ(0deg)
+    }
+    to {
+        transform: rotateZ(360deg)
+    }
+}
