@@ -104,8 +104,8 @@ nav .logo {
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
 }
 
 nav .logo h1 {
@@ -115,7 +115,6 @@ nav .logo h1 {
   background: -webkit-gradient(linear, left top, right top, from(#38f39f), to(#38a4d4));
   background: linear-gradient(left, #38f39f, #38a4d4);
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -475,6 +474,12 @@ footer h4 {
           flex: 1 1 40rem;
 }
 
+@media screen and (max-width: 1600px) {
+  nav {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 1332px) {
   html {
     font-size: 53%;
@@ -499,6 +504,38 @@ footer h4 {
   }
 }
 
+@media screen and (max-width: 862px) {
+  nav {
+    width: 100%;
+  }
+  nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 38rem;
+            flex: 1 1 38rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  nav ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60rem;
+            flex: 1 1 60rem;
+    margin: 2rem 0rem;
+  }
+}
+
 @media screen and (max-width: 753px) {
   footer {
     text-align: center;
@@ -511,6 +548,51 @@ footer h4 {
   footer ul {
     padding: 2rem;
     padding-bottom: 3rem;
+  }
+  .main-head {
+    width: 95%;
+    margin: auto;
+  }
+  .intro-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .intro-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .intro-social a {
+    margin: 2rem;
+  }
+  .intro-images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 5rem 0;
+  }
+  .intro-images svg {
+    width: 70%;
   }
   .form-section {
     width: 100%;
@@ -532,35 +614,6 @@ footer h4 {
   .main-head {
     width: 95%;
     margin: auto;
-  }
-  nav {
-    width: 100%;
-  }
-  nav .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 20rem;
-            flex: 1 1 20rem;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  nav ul {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 60rem;
-            flex: 1 1 60rem;
-    margin: 2rem 0rem;
   }
   .intro-text {
     margin-top: 5rem;
@@ -603,6 +656,15 @@ footer h4 {
     width: 100%;
     height: 100%;
     max-width: 100%;
+  }
+  nav .logo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  nav .logo h1 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
   .form-section {
     margin-top: 2rem;
