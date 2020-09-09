@@ -115,6 +115,8 @@ nav .logo h1 {
   background: -webkit-gradient(linear, left top, right top, from(#38f39f), to(#38a4d4));
   background: linear-gradient(left, #38f39f, #38a4d4);
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
@@ -164,6 +166,7 @@ nav ul {
   background: -webkit-gradient(linear, left top, right top, from(#38f39f), to(#38a4d4));
   background: linear-gradient(left, #38f39f, #38a4d4);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }

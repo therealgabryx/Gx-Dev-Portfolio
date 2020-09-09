@@ -19,6 +19,7 @@ nav {
             font-weight: bolder;
             background: $gradient;
             background-clip: text;
+            -webkit-background-clip: text;-webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-block;
         }    
@@ -42,6 +43,7 @@ nav {
         padding-top: 2rem;
         background: $gradient;
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         display: inline-block;
     }  
