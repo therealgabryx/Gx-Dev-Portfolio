@@ -1,0 +1,62 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Ruhl';
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Ruhl Medium';
+  src: url("/assets/fonts/FrankRuhlLibre-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Vibes';
+  src: url("/assets/fonts/GreatVibes-Regular.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem === 10px */
+  scroll-behavior: smooth;
+}
+
+img {
+  pointer-events: none;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+li, button, label, input, p, a {
+  font-size: var(--text);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4, h5 {
+  font-size: var(--header4);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
